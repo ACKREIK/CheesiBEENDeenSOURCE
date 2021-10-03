@@ -1,0 +1,52 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "DemonCatDrops",
+      "type": "loottable",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_cat_drops"
+    },
+    {
+      "name": "Ctabblock",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ctabblock"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.cheesbeandeen.ctabblock": "Ctabblock"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cheesbeandeen",
+    "modName": "Cheesi\u0027s Beans Deens",
+    "version": "1.0.0",
+    "author": "jerif, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.cheesbeandeen",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}
