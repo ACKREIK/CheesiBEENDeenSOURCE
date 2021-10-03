@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cheesbeandeen:blocks/compressskull",
+    "up": "cheesbeandeen:blocks/compressskull",
+    "north": "cheesbeandeen:blocks/compressskull",
+    "east": "cheesbeandeen:blocks/compressskull",
+    "south": "cheesbeandeen:blocks/compressskull",
+    "west": "cheesbeandeen:blocks/compressskull",
+    "particle": "cheesbeandeen:blocks/compressskull"
+  }
+}

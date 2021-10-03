@@ -7,9 +7,9 @@
       {
         "minrolls": 1,
         "maxrolls": 1,
-        "minbonusrolls": 10,
-        "maxbonusrolls": 11,
-        "hasbonusrolls": true,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
@@ -17,22 +17,8 @@
               "value": "Items.DIAMOND"
             },
             "weight": 1,
-            "minCount": 2,
-            "maxCount": 7,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.BEEF"
-            },
-            "weight": 1,
-            "minCount": 2,
-            "maxCount": 7,
+            "minCount": 1,
+            "maxCount": 10,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -44,9 +30,9 @@
             "item": {
               "value": "Items.BONE"
             },
-            "weight": 1,
-            "minCount": 2,
-            "maxCount": 21,
+            "weight": 19,
+            "minCount": 1,
+            "maxCount": 43,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -56,11 +42,25 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.RECORD_CAT"
+              "value": "Items.BEEF"
             },
-            "weight": 1,
+            "weight": 8,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 11,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Skull"
+            },
+            "weight": 7,
+            "minCount": 1,
+            "maxCount": 18,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -70,7 +70,7 @@
         ]
       }
     ],
-    "name": "gameplay/demon_cat_drops",
+    "name": "blocks/compacted_corpses",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "cheesbeandeen:block/other_world_portal_ew"
+    },
+    "axis=x": {
+      "model": "cheesbeandeen:block/other_world_portal_ns"
+    }
+  }
+}

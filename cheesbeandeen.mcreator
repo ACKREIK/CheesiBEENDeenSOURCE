@@ -27,6 +27,115 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "c_biome"
+    },
+    {
+      "name": "CompactedCorpses",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compacted_corpses"
+    },
+    {
+      "name": "Skullpoison",
+      "type": "potioneffect",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skullpoison"
+    },
+    {
+      "name": "SkullpoisonEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skullpoison_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkullFoodEaten",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skull_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skull",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skull"
+    },
+    {
+      "name": "Camp",
+      "type": "biome",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "camp"
+    },
+    {
+      "name": "Base",
+      "type": "biome",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "base"
+    },
+    {
+      "name": "OtherWorld",
+      "type": "dimension",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "other_world",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "DemonCat",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_cat"
+    },
+    {
+      "name": "Compactcorpse",
+      "type": "loottable",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compactcorpse"
     }
   ],
   "variable_elements": [],
@@ -34,7 +143,15 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabc_biome": "C Biome",
-      "item.cheesbeandeen.encased_orb": "Encased Orb"
+      "item.cheesbeandeen.demon_cat_spawn_egg": "Demon Cat Spawn Egg",
+      "biome.cheesbeandeen.base": "Base",
+      "item.cheesbeandeen.other_world": "Key to hell",
+      "effect.skullpoison": "Hardiness",
+      "item.cheesbeandeen.skull": "Skull",
+      "entity.cheesbeandeen.demon_cat": "Demon Cat",
+      "biome.cheesbeandeen.camp": "Camp",
+      "item.cheesbeandeen.encased_orb": "Encased Orb",
+      "block.cheesbeandeen.compacted_corpses": "Compacted Corpses"
     }
   },
   "foldersRoot": {

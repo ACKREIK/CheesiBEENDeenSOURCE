@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Camp"
+      },
+      {
+        "value": "CUSTOM:Base"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:CompactedCorpses"
+    },
+    "fluidBlock": {
+      "value": "Blocks.BUBBLE_COLUMN"
+    },
+    "airColor": {
+      "value": -16777165,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.END_STONE"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 10,
+    "portalSound": {
+      "value": "block.furnace.fire_crackle"
+    },
+    "igniterName": "Key to hell",
+    "igniterTab": {
+      "value": "CUSTOM:CBiome"
+    },
+    "texture": "hellkey",
+    "portalTexture": "compressskull",
+    "enablePortal": true
+  }
+}

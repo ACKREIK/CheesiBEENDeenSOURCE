@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "skull",
+    "customModelName": "Normal",
+    "name": "Skull",
+    "rarity": "EPIC",
+    "specialInfo": [
+      "What the..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:CBiome"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 666,
+    "saturation": 20.0,
+    "eatingSpeed": 2,
+    "resultItem": {
+      "value": "Items.GUNPOWDER"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "SkullFoodEaten"
+    }
+  }
+}

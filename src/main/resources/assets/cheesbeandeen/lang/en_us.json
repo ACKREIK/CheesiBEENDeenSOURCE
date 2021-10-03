@@ -1,4 +1,12 @@
 {
   "itemGroup.tabc_biome": "C Biome",
-  "item.cheesbeandeen.encased_orb": "Encased Orb"
+  "item.cheesbeandeen.demon_cat_spawn_egg": "Demon Cat Spawn Egg",
+  "biome.cheesbeandeen.base": "Base",
+  "item.cheesbeandeen.other_world": "Key to hell",
+  "effect.skullpoison": "Hardiness",
+  "item.cheesbeandeen.skull": "Skull",
+  "entity.cheesbeandeen.demon_cat": "Demon Cat",
+  "biome.cheesbeandeen.camp": "Camp",
+  "item.cheesbeandeen.encased_orb": "Encased Orb",
+  "block.cheesbeandeen.compacted_corpses": "Compacted Corpses"
 }
