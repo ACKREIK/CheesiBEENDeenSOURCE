@@ -11,20 +11,30 @@
       "registry_name": "demon_cat_drops"
     },
     {
-      "name": "Ctabblock",
-      "type": "block",
+      "name": "EncasedOrb",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "encased_orb"
+    },
+    {
+      "name": "CBiome",
+      "type": "tab",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ctabblock"
+      "registry_name": "c_biome"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.cheesbeandeen.ctabblock": "Ctabblock"
+      "itemGroup.tabc_biome": "C Biome",
+      "item.cheesbeandeen.encased_orb": "Encased Orb"
     }
   },
   "foldersRoot": {
