@@ -9,6 +9,7 @@ import net.mcreator.cheesbeandeen.potion.SkullpoisonPotionEffect;
 import net.mcreator.cheesbeandeen.CheesbeandeenMod;
 
 import java.util.Map;
+import java.util.HashMap;
 
 public class SkullFoodEatenProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -23,5 +24,10 @@ public class SkullFoodEatenProcedure {
 		}
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(SkullpoisonPotionEffect.potion, (int) 60, (int) 5));
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			SkullpoisonEffectStartedappliedProcedure.executeProcedure($_dependencies);
+		}
 	}
 }
