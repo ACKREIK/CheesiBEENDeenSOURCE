@@ -148,6 +148,15 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Zoneofthedead",
+      "type": "biome",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zoneofthedead"
     }
   ],
   "variable_elements": [],
@@ -161,6 +170,7 @@
       "effect.skullpoison": "Hardiness",
       "item.cheesbeandeen.skull": "Skull",
       "entity.cheesbeandeen.demon_cat": "Demon Cat",
+      "biome.cheesbeandeen.zoneofthedead": "Zoneofthedead",
       "biome.cheesbeandeen.camp": "Camp",
       "item.cheesbeandeen.encased_orb": "Encased Orb",
       "block.cheesbeandeen.compacted_corpses": "Compacted Corpses"
