@@ -9,8 +9,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.util.ITeleporter;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -53,8 +55,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 
+import net.mcreator.cheesbeandeen.procedures.OtherWorldPlayerEntersDimensionProcedure;
 import net.mcreator.cheesbeandeen.item.OtherWorldItem;
-import net.mcreator.cheesbeandeen.block.CompactedCorpsesBlock;
 import net.mcreator.cheesbeandeen.CheesbeandeenModElements;
 
 import javax.annotation.Nullable;
@@ -64,6 +66,8 @@ import java.util.function.Function;
 import java.util.Set;
 import java.util.Random;
 import java.util.Optional;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.Comparator;
 
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
@@ -77,6 +81,7 @@ public class OtherWorldDimension extends CheesbeandeenModElements.ModElement {
 	public static final CustomPortalBlock portal = null;
 	public OtherWorldDimension(CheesbeandeenModElements instance) {
 		super(instance, 4);
+		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 
@@ -86,10 +91,10 @@ public class OtherWorldDimension extends CheesbeandeenModElements.ModElement {
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(CompactedCorpsesBlock.block).build(), "field_222718_j");
+						.add(Blocks.POLISHED_ANDESITE).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(CompactedCorpsesBlock.block).build(), "field_222718_j");
+						.add(Blocks.POLISHED_ANDESITE).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -603,6 +608,20 @@ public class OtherWorldDimension extends CheesbeandeenModElements.ModElement {
 				}
 			} else {
 				return optional;
+			}
+		}
+	}
+	@SubscribeEvent
+	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+		Entity entity = event.getPlayer();
+		World world = entity.world;
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
+		if (event.getTo() == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("cheesbeandeen:other_world"))) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				OtherWorldPlayerEntersDimensionProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

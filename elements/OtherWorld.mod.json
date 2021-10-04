@@ -12,22 +12,25 @@
     ],
     "worldGenType": "Nether like gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:CompactedCorpses"
+      "value": "Blocks.STONE#6"
     },
     "fluidBlock": {
-      "value": "Blocks.BUBBLE_COLUMN"
+      "value": "Blocks.FLOWING_WATER"
     },
     "airColor": {
       "value": -16777165,
       "falpha": 0.0
     },
-    "canRespawnHere": false,
+    "canRespawnHere": true,
     "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "OtherWorldPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": "Blocks.END_STONE"
     },

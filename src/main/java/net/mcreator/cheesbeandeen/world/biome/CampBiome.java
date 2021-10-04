@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.trunkplacer.GiantTrunkPlacer;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
@@ -38,12 +37,9 @@ import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorldWriter;
 import net.minecraft.world.ISeedReader;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.particles.ParticleTypes;
@@ -83,7 +79,7 @@ public class CampBiome extends CheesbeandeenModElements.ModElement {
 						.setMusic(new BackgroundMusicSelector(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.break")),
 								12000, 24000, true))
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.LARGE_SMOKE, 0.016f)).build();
+						.setParticle(new ParticleEffectAmbience(ParticleTypes.LARGE_SMOKE, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(CompactedCorpsesBlock.block.getDefaultState(),
 								Blocks.BEDROCK.getDefaultState(), Blocks.BEDROCK.getDefaultState())));
@@ -111,7 +107,7 @@ public class CampBiome extends CheesbeandeenModElements.ModElement {
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(2.8f).scale(2f).temperature(2f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(3.6f).scale(0f).temperature(2f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("cheesbeandeen:camp"));
@@ -120,8 +116,6 @@ public class CampBiome extends CheesbeandeenModElements.ModElement {
 	}
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 8));
 	}
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();

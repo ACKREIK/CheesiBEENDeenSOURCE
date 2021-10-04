@@ -64,12 +64,12 @@
       "sea_level": 32,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "cheesbeandeen:compacted_corpses"
+        "Name": "minecraft:polished_andesite"
       },
       "default_fluid": {
-        "Name": "minecraft:bubble_column",
+        "Name": "minecraft:water",
         "Properties": {
-          "drag": "true"
+          "level": "0"
         }
       },
       "noise": {

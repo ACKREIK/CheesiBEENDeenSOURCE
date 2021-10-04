@@ -46,18 +46,18 @@
     "particleToSpawn": {
       "value": "SMOKE_LARGE"
     },
-    "particlesProbability": 1.6,
+    "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:Camp"
+      "value": "No parent"
     },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 2.8,
-    "heightVariation": 2.0,
+    "baseHeight": 3.6,
+    "heightVariation": 0.0,
     "biomeType": "WARM",
-    "spawnBiome": true,
-    "biomeWeight": 8,
+    "spawnBiome": false,
+    "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 18,
     "seagrassPerChunk": 3,

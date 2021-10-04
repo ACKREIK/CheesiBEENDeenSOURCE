@@ -136,6 +136,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "compactcorpse"
+    },
+    {
+      "name": "OtherWorldPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "other_world_player_enters_dimension",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],

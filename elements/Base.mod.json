@@ -4,7 +4,7 @@
   "definition": {
     "name": "Base",
     "groundBlock": {
-      "value": "Blocks.DEAD_TUBE_CORAL_BLOCK"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
       "value": "CUSTOM:CompactedCorpses"
@@ -48,19 +48,19 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "WARM",
-    "spawnBiome": true,
-    "biomeWeight": 36,
+    "spawnBiome": false,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "sandPatchesPerChunk": 6,
+    "gravelPatchesPerChunk": 6,
+    "reedsPerChunk": 3,
+    "cactiPerChunk": 4,
+    "treesPerChunk": 19,
     "vanillaTreeType": "Birch trees",
     "treeType": 0,
     "minHeight": 7,
@@ -87,11 +87,15 @@
     "spawnIgloo": true,
     "spawnOceanMonument": false,
     "spawnShipwreck": true,
-    "oceanRuinType": "NONE",
+    "oceanRuinType": "COLD",
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "ExtraEmeraldOre",
+      "Bamboo",
+      "SavannaTrees",
+      "TaigaGrassDeadBushesMushrooms"
     ],
     "spawnEntries": []
   }
