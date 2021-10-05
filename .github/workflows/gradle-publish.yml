@@ -43,5 +43,5 @@ jobs:
     - name: Publish to GitHub Packages
       run: gradle publish --warning-mode=all
       env:
-        USERNAME: ${{ github.actor }}
+        USERNAME: ${{ secrets.NAME }}
         TOKEN: ${{ secrets.tOK }}
