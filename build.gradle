@@ -16,6 +16,23 @@ archivesBaseName = 'modid'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'org.company'
+            artifactId = 'sample'
+            version = 20201028-1.16.3""
+            from components.java
+
+            pom {
+                name = 'My Library'
+                description = 'A description of my library'
+            }
+        }
+    }
+}
+
+
 minecraft {
     mappings channel: 'snapshot', version: '20201028-1.16.3'
 
